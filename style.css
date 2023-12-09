@@ -57,7 +57,7 @@ section2 {
         width: 100%;
     } */
 }
-.container {
+/* .container {
     position: relative;
 }
 
@@ -80,7 +80,7 @@ section2 {
     left: -70px;
     transform: translate(-50%, -50%);
     color:#000000
-}
+} */
 h2 {
 	margin-left: 100px;
     color: #ffffff;
