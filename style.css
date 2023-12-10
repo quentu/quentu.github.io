@@ -1,10 +1,10 @@
 
 html *{
-	font-family: 'Gill Sans', sans-serif !important;
+	/* font-family: 'Gill Sans', sans-serif !important; */
 	transition: all 0.3s ease;
 }
 body {
-    /* font-family: 'Gill Sans', sans-serif; */
+    font-family: 'Gill Sans', sans-serif;
     margin: 0;
     padding: 0;
 	background-color: #181818;
@@ -30,15 +30,15 @@ h1 {
 	font-weight: bold;
     font-size: 30px;
 	margin: 0px;
-    font-family: 'Gill Sans', sans-serif;
+    /* font-family: 'Gill Sans', sans-serif; */
 }
 
 section {
 	margin-bottom: 60px;
 }
 
-section2 {
-    background-color: #181818;
+section.about {
+    background-color: #0f0f0f;
 	/* align-items: center; */
     color: #000000;
     padding: 10px;
@@ -83,12 +83,21 @@ section2 {
     color:#000000 */
 /* } */
 h2 {
-	margin-left: 100px;
+	margin-left: 50px;
     color: #ffffff;
     font-size: 60px;
 	font-weight: bold;
 	margin-bottom: 14px;
-	margin-right: 100px;
+	margin-right: 50px;
+}
+.hContacts {
+	margin-left: 50px;
+	text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 14px;
+	margin-right: 50px;
 }
 .accent {
 	color: #83705e;
@@ -106,13 +115,43 @@ h3 {
 
 p {
 	text-align: left;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
     color: #ffffff;
 	font-weight: normal;
     font-size: 40px;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.pContact {
+	text-align: left;
+	margin-left: 50px;
+	margin-right: 50px;
+    color: #ffffff;
+	font-weight: normal;
+    font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 2em;
+}
+ul.links {
+	list-style: none;
+	padding: 0;
+	text-align: center; /* Center the list items */
+}
+
+ul.links li {
+	display: inline-block;
+	margin: 40px; /* Add some margin between the list items */
+}
+
+ul.links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 500%; /* Adjust the font size to make the icons larger */
+	text-decoration: none;
 }
 /* @media (max-width: 1000px) {
 	h2 {
@@ -208,7 +247,7 @@ footer {
 	margin: 0;
 	padding: 80px 0;
 	/* list-style:; */
-	background-color: #0f0f0f;
+	background-color: #181818;
 	box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 	transition-duration: .25s;
 	@media (max-width: 1000px) {
@@ -222,7 +261,7 @@ footer {
 	padding-bottom: 20px;
 	margin: auto;
 	color: #ffffff;
-	font-family: 'Gill sans', sans-serif;
+	/* font-family: 'Gill sans', sans-serif; */
 	font-size: 30px;
 	font-weight: normal;
 	text-decoration: none;

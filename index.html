@@ -4,62 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quentu.</title>
+    <script src="https://kit.fontawesome.com/f982ccaf7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1><span class="accent">quent</span>u.</h1>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
 
-<header>
-    <h1><span class="accent">quent</span>u.</h1>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html">home</a></li>
+                <li><a class="menu__item" href="contact.html">contact</a></li>
+                <li><a class="menu__item" href="assets/resume - quentu..pdf">resume</a></li>
+                <li><a class="menu__item" href="#">projects</a></li>
+            </ul>
+        </div>
+    </header>
 
-        <ul class="menu__box">
-            <li><a class="menu__item" href="index.html">home</a></li>
-            <li><a class="menu__item" href="contact.html">contact</a></li>
-            <li><a class="menu__item" href="#">projects</a></li>
-        </ul>
-    </div>
-</header>
+    <main>
+        <section class="intro">
+            <h2>Hey, I'm <span class="accent">Quentin Ustoy</span></h2>
+            <p>I am a student developer currently studying</p>
+            <p>Computer Science and Engineering at</p>
+            <p>the University of California, Merced</p>
+        </section>
 
-<main>
-	<section>
-		<h2>Hey, I'm <span class="accent">Quentin Ustoy</span></h2>
-			<p>I am a student developer currently studying</p>
-			<p>Computer Science and Engineering at</p>
-			<p>the University of California, Merced</p>
-	</section>
-	<section2>
-		<img class="memoji" src="assets\memojiblank.png" alt="Description of the image"> <!-- Replace 'your-image.jpg' with the actual filename of your image -->
-		<h3>About Me</h3>
-	</section2>
-	
-    <!-- 
-    <section>
-        <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi nec tellus rhoncus faucibus. Vivamus venenatis nibh at est gravida, a aliquet turpis euismod.</p>
-    </section>
-    <section>
-        <h2>Contact</h2>
-        <p>Email: </p>
-        <p>Phone: 123-456-7890</p>
-    </section>
-    -->
-</main>
-
-<!-- <div class="container">
-    <p class="hover-trigger">tux</p>
-    <img src="assets\tux.png" alt="Secret Image" class="hidden-image" id="secretImage">
-</div>
-<audio id="secretAudio">
-    <source src="assets\ducky.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
-
-<script src="script.js"></script> -->
-
+        <section class="about">
+            <img class="memoji" src="assets/memojiblank.png" alt="Description of the image">
+            <h3>About Me</h3>
+        </section>
+    </main>
 </body>
 </html>
 
