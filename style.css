@@ -16,6 +16,34 @@ body {
     /* background-color: #464543; */
 	
 }
+.dark-mode {
+	background-color: #f0f0f0;
+	color: rgb(0, 0, 0);
+	background-image: url(../assets/topographylight.jpg);
+}
+.dark-mode header {
+	background-color: #f0f0f0;
+}
+
+.dark-mode h1 {
+	color:#000000;
+}
+
+.dark-mode p {
+	color:#000000;
+}
+
+.dark-mode h2 {
+	color:#000000;
+}
+.dark-mode section.about {
+	background-color:#f0f0f0;
+}
+
+.dark-mode h3 {
+	color: #000000
+}
+
 
 header {
     background-color: #181818;
@@ -24,7 +52,10 @@ header {
     padding: 10px;
     display: flex;
 }
-
+.title_btn {
+    text-decoration: none;
+    color: inherit;
+}
 h1 {
 	color: #ffffff;
 	font-weight: bold;
@@ -46,7 +77,6 @@ section.about {
 }
 
 .memoji {
-	/* position: fixed; */
 	top: 50%;
 	left: 5%;
 	padding: 20px;
@@ -54,9 +84,6 @@ section.about {
 	max-height: 300px;
 	width : 40%;
 	height: 40%;
-	/* @media (max-width: 800px) {
-        width: 100%;
-    } */
 }
 /* .container {
     position: relative;

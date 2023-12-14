@@ -7,9 +7,9 @@
     <script src="https://kit.fontawesome.com/f982ccaf7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class=".dark-mode">
     <header>
-        <h1><span class="accent">quent</span>u.</h1>
+        <h1><a class="title_btn" href="index.html"><span class="accent">quent</span>u.</a></h1>
         <div class="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
             <label class="menu__btn" for="menu__toggle">
@@ -38,6 +38,14 @@
             <h3>About Me</h3>
         </section>
     </main>
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+        <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+        </script>
 </body>
 </html>
 
