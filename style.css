@@ -171,23 +171,30 @@ footer {
     text-align: center;
 }
 @media (max-width: 1000px) {
-    h2 {
+    h2, .hContacts {
         font-size: 50px;
     }
 
     p, h3 {
         font-size: 33px;
     }
+	ul.links a {
+		font-size: 415%;
+	}
+
 }
 
 @media (max-width: 600px) {
-    h2 {
+    h2, .hContacts {
         font-size: 40px;
     }
 
     p, h3 {
         font-size: 27px;
     }
+	ul.links a {
+		font-size: 340%;
+	}
 }
 
 #menu__toggle {
