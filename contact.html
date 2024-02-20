@@ -22,6 +22,14 @@
             <li><a class="menu__item" href="contact.html">contact</a></li>
             <li><a class="menu__item" href="assets\resume - quentu..pdf">resume</a></li>
             <li><a class="menu__item" href="#">projects</a></li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox" onclick="darkMode()">
+                    <span class="slider round">
+                        <i class="fa-solid fa-moon"></i>
+                    </span>
+                </label>
+            </li>
         </ul>
     </div>
 </header>
@@ -42,3 +50,10 @@
         </ul>
 	</section>
 </main>
+
+<script>
+    function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+</script>

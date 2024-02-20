@@ -21,6 +21,15 @@
                 <li><a class="menu__item" href="contact.html">contact</a></li>
                 <li><a class="menu__item" href="assets/resume - quentu..pdf">resume</a></li>
                 <li><a class="menu__item" href="#">projects</a></li>
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" onclick="darkMode()">
+                        <span class="slider round">
+                            <i class="fa-solid fa-moon"></i>
+                        </span>
+                    </label>
+                </li>
+                
             </ul>
         </div>
     </header>
@@ -28,24 +37,17 @@
     <main>
         <section class="intro">
             <h2>Hey, I'm <span class="accent">Quentin Ustoy</span></h2>
-            <p>I am a student developer currently studying</p>
-            <p>Computer Science and Engineering at</p>
-            <p>the University of California, Merced</p>
-        </section>
-
-        <section class="about">
-            <img class="memoji" src="assets/memojiblank.png" alt="Description of the image">
-            <h3>About Me</h3>
+            <p>I am a student developer currently studying Computer Science and Engineering at the University of California, Merced.<br><br>I have a passion for programming and I love to create. When I’m not immersed in my studies, I try to spend my free time with activities that benefit my growth.<br><br>Whether that’s coding up a new project, designing in Fusion360, soldering electronics, or tinkering with my Ender V3 3D Printer, I keep myself busy.</p>
         </section>
     </main>
-    <button onclick="myFunction()">Toggle dark mode</button>
 
-        <script>
-        function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
+    
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
         }
-        </script>
+    </script>
 </body>
 </html>
 

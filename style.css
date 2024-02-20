@@ -17,15 +17,21 @@ body {
 	
 }
 .dark-mode {
-	background-color: #f0f0f0;
+	background-color: #e4e4e4;
 	color: rgb(0, 0, 0);
 	background-image: url(../assets/topographylight.jpg);
 }
 .dark-mode header {
-	background-color: #f0f0f0;
+	background-color: #e4e4e4;
+}
+.dark-mode .menu__box {
+	background-color: #e4e4e4;
 }
 
-.dark-mode h1 {
+.dark-mode h1{
+	color:#000000;
+}
+.dark-mode .menu__item {
 	color:#000000;
 }
 
@@ -37,7 +43,7 @@ body {
 	color:#000000;
 }
 .dark-mode section.about {
-	background-color:#f0f0f0;
+	background-color:#e4e4e4;
 }
 
 .dark-mode h3 {
@@ -85,30 +91,7 @@ section.about {
 	width : 40%;
 	height: 40%;
 }
-/* .container {
-    position: relative;
-} */
 
-/* .hidden-image {
-    display: none;
-    position: absolute;
-    top: 120px;
-    left: 0;
-	width: 50px;
-	height: auto;
-} */
-
-/* .hover-trigger:hover + .hidden-image {
-    display: block;
-} */
-/* .hover-trigger { */
-    /* Add your preferred positioning styles here */
-    /* position: absolute;
-    top: 150px;
-    left: -70px;
-    transform: translate(-50%, -50%);
-    color:#000000 */
-/* } */
 h2 {
 	margin-left: 50px;
     color: #ffffff;
@@ -182,16 +165,7 @@ ul.links a {
 	font-size: 500%; /* Adjust the font size to make the icons larger */
 	text-decoration: none;
 }
-/* @media (max-width: 1000px) {
-	h2 {
-	  	font-size: 60px;
-		margin-right:100px;
-	}
-	p{
-		font-size: 30px;
-		margin-right:100px;
-	}
-} */
+
 
 footer {
     /* background-color: #333; */
@@ -224,7 +198,46 @@ footer {
 	ul.links a {
 		font-size: 340%;
 	}
+} 
+.switch input {
+    display: none;
 }
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #2b2b2b;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider i {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    transition: transform 0.3s, border-radius 0.3s, background-color 0.3s;
+}
+
+input:checked + .slider {
+    background-color: #2b2b2b;
+}
+
+input:checked + .slider i {
+    transform: translateX(26px);
+	background-color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+}
+
 
 #menu__toggle {
 	opacity: 0;
@@ -274,7 +287,7 @@ footer {
 	top: 8px;
 }
 .menu__box {
-	display: block;
+	display: inline;
 	position: fixed;
 	top: 0;
 	right: -100%;
@@ -290,6 +303,7 @@ footer {
 		width: 100%;
 	}
 }
+
 .menu__item {
 	display: block;
 	text-align: left;
@@ -298,6 +312,22 @@ footer {
 	margin: auto;
 	color: #ffffff;
 	/* font-family: 'Gill sans', sans-serif; */
+	font-size: 30px;
+	font-weight: normal;
+	text-decoration: none;
+	transition-duration: .25s;
+	@media (max-width: 1000px) {
+		text-align: center;
+		padding-left: 0px;
+	}
+}
+.switch {
+	display: block;
+	text-align: left;
+	padding-left: 50px;
+	padding-bottom: 20px;
+	margin: auto;
+	color: #ffffff;
 	font-size: 30px;
 	font-weight: normal;
 	text-decoration: none;
