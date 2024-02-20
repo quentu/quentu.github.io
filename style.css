@@ -50,6 +50,9 @@ body {
 	color: #000000
 }
 
+.dark-mode .fa-envelope, .dark-mode .fa-linkedin, .dark-mode .fa-github{
+	color: #000000
+}
 
 header {
     background-color: #181818;
@@ -235,7 +238,9 @@ input:checked + .slider {
 input:checked + .slider i {
     transform: translateX(26px);
 	background-color: rgb(255, 255, 255);
-	color: rgb(255, 255, 255);
+	height: 26px;
+    width: 26px;
+	color: transparent;
 }
 
 
