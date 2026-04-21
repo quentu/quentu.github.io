@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects - quentu.</title>
+    <script src="https://kit.fontawesome.com/f982ccaf7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/terminal-favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1><a class="title_btn" href="./index"><span class="accent">quent</span>u.</a></h1>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" aria-label="Toggle navigation menu" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu__box">
+            <li><a class="menu__item" href="./index">home</a></li>
+            <li><a class="menu__item" href="./contact">contact</a></li>
+            <li><a class="menu__item" href="./projects">projects</a></li>
+            <li><a class="menu__item" href="assets/resume.pdf">resume</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="terminal">
+
+            <div class="terminal__header">
+                <div class="terminal__buttons">
+                    <span class="btn red"></span>
+                    <span class="btn yellow"></span>
+                    <span class="btn green"></span>
+                </div>
+                <div class="terminal__title">
+                    quentu@portfolio:~/projects
+                    <nav class="terminal__nav">
+                        <a href="./index">home</a>
+                        <a href="./contact">contact</a>
+                        <a href="./projects" class="active">projects</a>
+                        <a href="assets/resume.pdf">resume</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="terminal__body">
+                <div class="terminal__left">
+
+                    <p><span class="accent">quentu@portfolio</span>:~$ cd projects</p>
+                    <p><span class="accent">quentu@portfolio</span>:~/projects$ cat projects.txt</p>
+
+                    <br>
+                    <p>
+                        [1] <a href="./projects/project1">PyDash</a><br>
+                        → Linux CLI server monitoring + system stats panel built with python
+                    </p>
+
+                    <p>
+                        [2] <a href="./projects/project2">UST-NET</a><br>
+                        → Home server
+                    </p>
+
+                    <p>
+                        [3] <a href="./projects/project3">TrailBlazer</a><br>
+                        → Portable rugged Linux workstation built on Raspberry Pi 3B running Arch Linux ARM
+                    </p>
+
+                    <br>
+
+                    <p><span class="accent">quentu@portfolio</span>:~/projects$<span class="blink-smooth"> _</span> </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
