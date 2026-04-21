@@ -13,7 +13,7 @@
 <header>
     <h1><a class="title_btn" href="./index"><span class="accent">quent</span>u.</a></h1>
     <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
+        <input id="menu__toggle" type="checkbox" aria-label="Toggle navigation menu"/>
         <label class="menu__btn" for="menu__toggle">
             <span></span>
         </label>
@@ -21,26 +21,56 @@
         <ul class="menu__box">
             <li><a class="menu__item" href="./index">home</a></li>
             <li><a class="menu__item" href="./contact">contact</a></li>
+            <li><a class="menu__item" href="./projects">projects</a></li>
             <li><a class="menu__item" href="assets\resume.pdf">resume</a></li>
-            <!-- <li><a class="menu__item" href="#">projects</a></li> -->
         </ul>
     </div>
 </header>
 
 <main>
-    <h2 class="hContacts">Contact<span class="accent"> Me</span></h2>
-	<section class="contacts">
-        <ul class="links">
-            <li>
-                <a aria-label="Github" style="text-decoration: none;" href="https://github.com/quentu" class="fa-brands fa-github"></a>
-            </li>
-            <li>
-                <a aria-label="LinkedIn" style="text-decoration: none;" href="https://www.linkedin.com/in/quentu/" class="fa-brands fa-linkedin"></a>
-            </li>
-            <!-- <li>
-                <a aria-label="Email" style="text-decoration: none;" href="mailto:qustoy@quentu.dev" class="fa-solid fa-envelope"></a>
-            </li> -->
-        </ul>
-	</section>
+    <section class="hero">
+        <div class="terminal">
+
+            <div class="terminal__header">
+                <div class="terminal__buttons">
+                    <span class="btn red"></span>
+                    <span class="btn yellow"></span>
+                    <span class="btn green"></span>
+                </div>
+                <div class="terminal__title">
+                    quentu@portfolio:~/contact
+                    <nav class="terminal__nav">
+                        <a href="./index">home</a>
+                        <a href="./contact" class="active">contact</a>
+                        <a href="./projects">projects</a>
+                        <a href="assets/resume.pdf">resume</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="terminal__body">
+                <div class="terminal__left">
+
+                    <p><span class="accent">quentu@portfolio</span>:~$ cd contact</p>
+                    <p><span class="accent">quentu@portfolio</span>:~/contact$ ls</p>
+                    <p>github  linkedin</p>
+
+                    <p><span class="accent">quentu@portfolio</span>:~/contact$ open github</p>
+                    <p>
+                        → <a href="https://github.com/quentu" target="_blank" rel="noopener noreferrer">github.com/quentu</a>
+                    </p>
+
+                    <p><span class="accent">quentu@portfolio</span>:~/contact$ open linkedin</p>
+                    <p>
+                        → <a href="https://www.linkedin.com/in/quentu/" target="_blank" rel="noopener noreferrer">linkedin.com/in/quentu</a>
+                    </p>
+
+                    <p><span class="accent">quentu@portfolio</span>:~/contact$<span class="blink-smooth"> _</span> </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 </main>
 </body>

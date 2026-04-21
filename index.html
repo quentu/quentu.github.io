@@ -12,7 +12,7 @@
     <header>
         <h1><a class="title_btn" href="./index"><span class="accent">quent</span></a>u.</h1>
         <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
+            <input id="menu__toggle" type="checkbox" aria-label="Toggle navigation menu"/>
             <label class="menu__btn" for="menu__toggle">
                 <span></span>
             </label>
@@ -20,16 +20,54 @@
             <ul class="menu__box">
                 <li><a class="menu__item" href="./index">home</a></li>
                 <li><a class="menu__item" href="./contact">contact</a></li>
+                <li><a class="menu__item" href="./projects">projects</a></li>
                 <li><a class="menu__item" href="assets/resume.pdf">resume</a></li>
-                <!-- <li><a class="menu__item" href="#">projects</a></li>    -->
             </ul>
         </div>
     </header>
 
     <main>
-        <section class="intro">
-            <h2>Hey, I'm <span class="accent">Quentin</span></h2>
-            <p>My website is curretntly under maintainence. New projects coming, stay tuned :)</p>
+        <section class="hero">
+            <div class="terminal">
+
+                <div class="terminal__header">
+                    <div class="terminal__buttons">
+                        <span class="btn red"></span>
+                        <span class="btn yellow"></span>
+                        <span class="btn green"></span>
+                    </div>
+                    <div class="terminal__title">
+                        quentu@portfolio:~
+                        <nav class="terminal__nav">
+                            <a href="./index" class="active">home</a>
+                            <a href="./contact">contact</a>
+                            <a href="./projects">projects</a>
+                            <a href="assets/resume.pdf">resume</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="terminal__body">
+                    <div class="terminal__left">
+                        <p><span class="accent">quentu@portfolio</span>:~$ whoami</p>
+                        <p>Quentin Ustoy</p>
+ 
+                        <p><span class="accent">quentu@portfolio</span>:~$ cat intro.txt</p>
+                        <p>
+                            Computer Science student @ UC Merced<br>
+                            Computer Lab Manager @ UC Merced OIT<br>
+                            Into Linux, networking, and creating.
+                        </p>
+
+                        <p><span class="accent">quentu@portfolio</span>:~$<span class="blink-smooth"> _</span> </p>
+                    </div>
+
+                    <div class="terminal__right">
+                        <img src="assets/test.png" alt="Quentin">
+                    </div>
+                </div>
+
+            </div>
         </section>
     </main>
 </body>
