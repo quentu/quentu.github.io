@@ -60,8 +60,8 @@ section.about {
 
 p {
 	text-align: left;
-	margin-left: 50px;
-	margin-right: 50px;
+	/* margin-left: 50px; */
+	/* margin-right: 50px; */
     color: #ffffff;
 	font-weight: normal;
     font-size: 40px;
@@ -276,6 +276,7 @@ p {
     display: flex;
     padding: 24px;
     gap: 20px;
+    overflow-x: auto; 
 }
 
 /* LEFT SIDE (TEXT) */
@@ -290,6 +291,8 @@ p {
     margin: 6px 0;
 	font-size: 24px;
     line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* RIGHT SIDE (PHOTO) */
@@ -335,6 +338,9 @@ p {
 
     .terminal__right {
         width: 140px;
+    }
+    .terminal__left p {
+        font-size: 16px;
     }
 }
 
