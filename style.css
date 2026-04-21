@@ -342,6 +342,9 @@ p {
     .terminal__left p {
         font-size: 16px;
     }
+    .terminal__title {
+        font-size: 11px;
+    }
 }
 
 /* MOBILE HEADER FIX */
